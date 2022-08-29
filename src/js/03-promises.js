@@ -5,9 +5,9 @@ const formInput = document.querySelector('.form');
 formInput.addEventListener('submit', handleSubmit);
 function handleSubmit(event) {
   event.preventDefault();
-  delayValue = parseInt(formInput.elements.delay.value);
-  amountValue = parseInt(formInput.elements.amount.value);
-  stepValue = parseInt(formInput.elements.step.value);
+  const delayValue = parseInt(formInput.elements.delay.value);
+  const amountValue = parseInt(formInput.elements.amount.value);
+  const stepValue = parseInt(formInput.elements.step.value);
   promiseCycle(delayValue, stepValue, amountValue);
   event.currentTarget.reset();
 }
